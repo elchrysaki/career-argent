@@ -6,6 +6,10 @@ ARGENT helps you find and rank meaningful programs: research internships, funded
 
 The visual system uses a single Manrope font family, an ink/graphite/silver palette and a reduced-motion-friendly metallic backdrop. No frontend framework, paid hosting, online database, or npm dependency is required.
 
+## Public website
+
+The project has a public **informational GitHub Pages landing page** at `https://elchrysaki.github.io/career-argent/`, deployed from `public-site/index.html` by `.github/workflows/pages.yml`. It includes only installation instructions, not the personalized app or data. The fully functional dashboard runs **locally** at `http://127.0.0.1:4178` after `npm start`; GitHub Pages cannot run the private Node.js API or access `.local/`. An initial GitHub Pages configuration may require an admin to choose **GitHub Actions** in repository Settings → Pages before the public URL becomes active.
+
 ## 1. Prerequisites
 
 - **Node.js 20+** and `npm` (from [nodejs.org](https://nodejs.org/)).

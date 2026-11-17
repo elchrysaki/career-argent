@@ -8,7 +8,7 @@ const ALLOWED=new Set([
  '.gitignore','.githooks/pre-commit','.github/workflows/privacy.yml',
  'README.md','CONTRIBUTING.md','SECURITY.md','AGENTS.md','CLAUDE.md','LICENSE',
  'index.html','app.js','server.mjs','styles.css','atelier.css','package.json','assets/mercury-sea.svg',
- 'scripts/lib.mjs','scripts/daily.mjs','scripts/setup.mjs','scripts/privacy-check.mjs','scripts/install-hooks.mjs','scripts/install-daily.mjs',
+ 'public-site/index.html','.github/workflows/pages.yml','scripts/lib.mjs','scripts/daily.mjs','scripts/setup.mjs','scripts/privacy-check.mjs','scripts/install-hooks.mjs','scripts/install-daily.mjs',
  'templates/profile.template.json','templates/opportunities.template.json','templates/contacts.template.json','templates/progress.template.json','templates/learning.template.json',
  'prompts/daily.md','prompts/review.md','tests/local.test.mjs'
 ]);
