@@ -1,0 +1,19 @@
+name: Public structure privacy check
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Enforce structural-only repository
+        run: npm run audit
+      - name: Run local-only tests
+        run: node --test tests/*.test.mjs
+# Intentionally no scheduled research and no commits or uploads. Research is local-only.

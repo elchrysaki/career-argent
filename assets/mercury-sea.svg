@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 680" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.1" y2="1">
+      <stop offset="0" stop-color="#050a0b"/>
+      <stop offset=".15" stop-color="#192326"/>
+      <stop offset=".27" stop-color="#b8c7c8"/>
+      <stop offset=".32" stop-color="#f6f6f1"/>
+      <stop offset=".36" stop-color="#67787d"/>
+      <stop offset=".43" stop-color="#202d30"/>
+      <stop offset=".56" stop-color="#536367"/>
+      <stop offset=".60" stop-color="#0a1215"/>
+      <stop offset=".73" stop-color="#2d3a3d"/>
+      <stop offset=".89" stop-color="#070d10"/>
+      <stop offset="1" stop-color="#020607"/>
+    </linearGradient>
+    <linearGradient id="fore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0f3ef"/>
+      <stop offset=".03" stop-color="#a7b6b8"/>
+      <stop offset=".10" stop-color="#253135"/>
+      <stop offset=".23" stop-color="#0b1417"/>
+      <stop offset=".39" stop-color="#526165"/>
+      <stop offset=".44" stop-color="#a6b3b4"/>
+      <stop offset=".48" stop-color="#172529"/>
+      <stop offset=".78" stop-color="#0b1315"/>
+      <stop offset="1" stop-color="#020507"/>
+    </linearGradient>
+    <linearGradient id="trim" x1="0" y1="0" x2="1" y2=".35">
+      <stop offset="0" stop-color="#273739" stop-opacity="0"/>
+      <stop offset=".24" stop-color="#9eafb0" stop-opacity=".18"/>
+      <stop offset=".43" stop-color="#eef4f0" stop-opacity=".85"/>
+      <stop offset=".54" stop-color="#e6d9c4" stop-opacity="1"/>
+      <stop offset=".70" stop-color="#d8e4e3" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#35474b" stop-opacity=".2"/>
+    </linearGradient>
+    <radialGradient id="silverglow" cx="70%" cy="55%" r="40%">
+      <stop offset="0" stop-color="#9db5b5" stop-opacity=".22"/>
+      <stop offset=".4" stop-color="#4f6265" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mist" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="halo" x="-50%" y="-300%" width="200%" height="700%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="soft" x="-10%" y="-15%" width="120%" height="130%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".012 .046" numOctaves="2" seed="9" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".035"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1600" height="680" fill="#070b0d"/>
+  <ellipse cx="1100" cy="350" rx="700" ry="320" fill="url(#silverglow)"/>
+  <path d="M120 510 C 310 428, 440 519, 625 466 S 832 394, 959 440 C 1050 466, 1080 304, 1216 325 S 1403 318, 1660 238 L 1640 760 L 60 750 Z" fill="url(#silver)" opacity=".92"/>
+  <path d="M120 510 C 310 428, 440 519, 625 466 S 832 394, 959 440 C 1050 466, 1080 304, 1216 325 S 1403 318, 1660 238" stroke="url(#trim)" stroke-width="15" fill="none" filter="url(#halo)" opacity=".45"/>
+  <path d="M120 510 C 310 428, 440 519, 625 466 S 832 394, 959 440 C 1050 466, 1080 304, 1216 325 S 1403 318, 1660 238" stroke="url(#trim)" stroke-width="3" fill="none" opacity=".90"/>
+  <path d="M250 524 C 440 463, 525 539, 699 484 C 809 452, 838 468, 945 477 C 1040 487, 1103 374, 1209 385 S 1383 378, 1650 289" stroke="#d1dddb" stroke-opacity=".38" stroke-width="5" fill="none" filter="url(#soft)"/>
+  <path d="M340 565 C 502 534, 570 581, 757 528 S 1044 542, 1160 462 S 1410 450, 1650 385" fill="none" stroke="#bdc9c8" stroke-width="1.7" stroke-opacity=".36"/>
+  <path d="M410 583 C 580 539, 625 617, 828 568 S 1070 582, 1250 510 S 1450 505, 1700 460" fill="none" stroke="#8f9d9d" stroke-width="4" stroke-opacity=".28"/>
+  <path d="M90 570 C 315 522, 510 549, 700 548 C 906 554, 995 534, 1164 503 C 1332 458, 1450 498, 1670 448 L 1660 730 L -50 750 Z" fill="url(#fore)" opacity=".90"/>
+  <path d="M90 570 C 315 522, 510 549, 700 548 C 906 554, 995 534, 1164 503 C 1332 458, 1450 498, 1670 448" fill="none" stroke="#e5eeea" stroke-opacity=".72" stroke-width="1.5"/>
+  <path d="M610 640 C 850 595, 991 635, 1195 588 S 1478 571, 1710 521" fill="none" stroke="#dfe7e3" stroke-width="12" stroke-opacity=".16" filter="url(#halo)"/>
+  <path d="M600 640 C 850 595, 991 635, 1195 588 S 1478 571, 1710 521" fill="none" stroke="#dfe7e3" stroke-width="1" stroke-opacity=".33"/>
+  <ellipse cx="1296" cy="327" rx="38" ry="4" fill="#fff7e7" opacity=".33" filter="url(#halo)"/>
+  <ellipse cx="1296" cy="327" rx="4" ry="2" fill="#fff9ed" opacity=".72"/>
+  <rect width="1600" height="680" filter="url(#grain)" opacity=".5"/>
+</svg>

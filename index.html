@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080A0C">
+  <meta name="description" content="ARGENT — personal research opportunity intelligence and long-range learning map.">
+  <title>ARGENT — An Atlas of Ambition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="atelier.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to main content</a>
+  <div id="app">
+    <aside class="sidebar">
+      <a class="brand" href="#/overview" aria-label="Argent overview"><span class="brand-sigil" aria-hidden="true"><svg class="mercury-mark" viewBox="0 0 52 52" aria-hidden="true"><path d="M8 26c5.6-7.8 11.8-7.8 17.8 0s12.3 7.8 18.2 0"/><path d="M8 32c5.6-7.8 11.8-7.8 17.8 0s12.3 7.8 18.2 0" opacity=".5"/><path d="M8 20c5.6-7.8 11.8-7.8 17.8 0s12.3 7.8 18.2 0" opacity=".35"/></svg></span><span class="brand-word">ARGENT<small>YOUR RESEARCH ATLAS</small></span></a>
+      <div class="sidebar-caption">THE HORIZON</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#/overview" data-route="overview"><span class="nav-index" aria-hidden="true">01</span> Overview</a>
+        <a href="#/opportunities" data-route="opportunities"><span class="nav-index" aria-hidden="true">02</span> Opportunity vault <span class="nav-count" id="nav-total"></span></a>
+        <a href="#/priorities" data-route="priorities"><span class="nav-index" aria-hidden="true">03</span> Priority radar</a>
+        <a href="#/plan" data-route="plan"><span class="nav-index" aria-hidden="true">04</span> Action plan</a>
+        <a href="#/outreach" data-route="outreach"><span class="nav-index" aria-hidden="true">05</span> People & outreach</a>
+        <a href="#/talks" data-route="talks"><span class="nav-index" aria-hidden="true">06</span> Talks & stages</a>
+      </nav>
+      <div class="sidebar-caption second">THE LONG GAME</div>
+      <nav class="nav"><a href="#/constellation" data-route="constellation"><span class="nav-index" aria-hidden="true">07</span> Constellation</a><a href="#/signals" data-route="signals"><span class="nav-index" aria-hidden="true">08</span> Research signals</a></nav>
+      <div class="sidebar-caption second">PERSONAL WORKSPACE</div>
+      <nav class="nav" aria-label="Personal settings"><a href="#/settings" data-route="settings"><span class="nav-index" aria-hidden="true">09</span> Local preferences</a></nav>
+      <div class="sidebar-bottom">
+        <div class="avatar" id="avatar">●</div>
+        <div class="identity"><strong id="profile-name">Private workspace</strong><span id="profile-role">Set your own direction</span></div>
+        <div class="identity-glint"></div>
+      </div>
+    </aside>
+    <div class="site-body">
+      <div class="topbar"><div class="topbar-left"><span class="pulse-dot"></span><span>ARGENT  /  PRIVATE RESEARCH INTELLIGENCE</span></div><div class="topbar-right"><span id="refresh-date">Private snapshot</span><span class="topbar-line"></span><span class="topbar-time" id="clock"></span></div></div>
+      <main id="view" tabindex="-1"></main>
+      <footer class="site-footer"><span>ARGENT <span class="footer-dot"> / </span> NOT EVERY DOOR IS FOR TODAY.</span><span>Build evidence. Meet minds. Pursue the extraordinary.</span></footer>
+    </div>
+  </div>
+  <div id="toast" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

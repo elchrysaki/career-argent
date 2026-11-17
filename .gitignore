@@ -1,0 +1,28 @@
+# PRIVATE: never add any of these to the public repository
+.local/
+private/
+data/
+exports/
+backups/
+research-output/
+*.private.*
+*.personal.*
+*.secret.*
+*.local.json
+*.local.md
+*.log
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+.claude/projects/
+.codex/
+node_modules/
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+# local runner output and browser tests
+playwright-report/
+test-results/
+coverage/
